@@ -34,6 +34,3 @@ html += <<-HTML
 HTML
 
 File.write('output.html', html)
-
-
-#

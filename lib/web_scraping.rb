@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 require 'mechanize'
 #require 'nokogiri'
 
@@ -28,3 +30,4 @@ class WebScraping
     def getWebsite
     end
 end
+>>>>>>> fa8524611372130f162f36462e110c84191e0e5b

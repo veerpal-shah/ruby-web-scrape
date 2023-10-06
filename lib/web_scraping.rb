@@ -10,12 +10,16 @@ class WebScraping
     end
 
     def getName
-        degree_prgm = @degree_list.css("div[style='padding:0 0 18px 0']")
-        degree_prgm.each do
-            degree = degree_prgm.css("div[style='margin:4px 0 0 30px; text-indent: -10px']").css('a')
-            puts degree
+        degrees = @degree_list.css("div[style='padding:0 0 18px 0']").css("div[style='margin:4px 0 0 30px; text-indent: -10px']").css('a')
+        i = 0;
+        until degrees.length == 0
+            degree = degrees.shift.inner_text
+            if degree.include?("Doctor")
+                @degree_array[i] = degree
+                i += 1
+            end
         end
-        #puts degree_prgm
+        puts @degree_array
     end
 
     def getPhone

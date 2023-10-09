@@ -7,6 +7,6 @@ class DataCollector
     end
 
     def start
-        @web.getName
+        @web.getInfo
     end
 end

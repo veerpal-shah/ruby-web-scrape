@@ -42,4 +42,8 @@ class WebScraping
         website = info.css("a[target='_blank']").first['href']
         @degree_array[i][2] = website
     end
+    
+    def extracted_data
+    	@degree_array.values
+    end
 end

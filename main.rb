@@ -1,6 +1,4 @@
 #require 'rubygems'
-require_relative 'lib/data_collector.rb'
-
-data = DataCollector.new
-data.start
-
+require_relative 'lib/html_web_gen.rb'
+generator = HtmlWebGen.new
+generator.generate_html

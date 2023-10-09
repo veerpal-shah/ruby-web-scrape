@@ -12,10 +12,10 @@ class HtmlWebGen
 		<!DOCTYPE html>
 		<html>
 		<head>
-		<title>Page Title</title>
+		<title>Doctorate Degrees</title>
 		</head>
-		<body><h1>List of Doctor Degrees</h1>
-		<p>These are all the doctor degrees offered at Ohio State University</p>
+		<body><h1>List of Doctorate Degrees</h1>
+		<p>These are all the doctorate degrees offered at Ohio State University</p>
 		<table border = "1">
 			<tr>
 				<th>Degree</th>

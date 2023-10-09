@@ -16,3 +16,5 @@ This code will have the output:
 	it will generate a output.html file, which will contain an HTML representation for all data mentioned above. Open the file in your browser to view the data.
 	
 We followed all guidelines for the website's data usage policies and are in line with the terms of usage and service. 
+
+Authors : Brenden Naumovski, Cameron Barclay, Colin Reardon, Veerpal Shah

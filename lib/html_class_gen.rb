@@ -23,12 +23,12 @@ class HtmlWebGen
 				<th>Website</th>
 			</tr>
 		HTML
-		@data.each do |degree, phone, website|
+		@data.each_key do |k|
 			html += <<-ROW
 			<tr>
-				<td>#{degree}</td>
-				<td>#{phone}</td>
-				<td><a href="#{website}">#{website}</a></td>
+				<td>#{@data[k][0]}</td>
+				<td>#{@data[k][1]}</td>
+				<td><a href="#{@data[k][2]}">#{@data[k][2]}</a></td>
 			</tr>
 			ROW
 		end
@@ -40,6 +40,3 @@ class HtmlWebGen
 		File.write('output.html', html)
 	end
 end
-
-generator = HtmlWebGen.new
-generator.generate_html

@@ -10,7 +10,7 @@ class WebScraping
         @degree_array = Hash.new { |h, k| h[k] = [] }
     end
 
-    def getInfo
+    private def getInfo
         i = 0
         until @degrees.length == 0
             degree = @degrees.shift
@@ -44,6 +44,7 @@ class WebScraping
     end
     
     def extracted_data
-    	@degree_array.values
+        getInfo
+    	@degree_array
     end
 end

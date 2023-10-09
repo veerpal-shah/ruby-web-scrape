@@ -1,4 +1,3 @@
-# Sample data
 require_relative 'web_scraping'
 
 class HtmlWebGen

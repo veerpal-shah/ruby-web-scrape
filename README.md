@@ -1,4 +1,4 @@
-# rubyWebScrape
+# project3-group7
 Ruby Web Scrape
 
 A simple Ruby-based web scraping project that extracts information about doctorate degrees offered at Ohio State University and generates an HTML page with the extracted data.
